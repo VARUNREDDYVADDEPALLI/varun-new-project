@@ -1,0 +1,7 @@
+git work flow
+1 st command clone the ripositary
+2 nd command to create a new branch checkout-b "branch name"
+once u modified the file after modified the file run below command
+" git add ."
+once u add the commit the file git commit-m " message"
+git push
