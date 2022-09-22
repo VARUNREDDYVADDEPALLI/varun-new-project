@@ -3,7 +3,8 @@ RUN mkdir /droplets-src
 WORKDIR /droplets-src
 COPY ./ .
 RUN CGO_ENABLED=0 make setup all
-
+RUN CGO_ENABLED=0 make setup --dry-run
+RUN CGO_ENABLED=0 make setup -- wet-run
 FROM alpine:latest
 RUN mkdir /app
 WORKDIR /app
